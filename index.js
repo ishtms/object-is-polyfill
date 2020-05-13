@@ -1,4 +1,6 @@
-
+/*
+  TODO: Add closure to maintain a local state.
+*/
 if (!Object.is) {
   Object.is = function ObjectIs() {
     /* Setting the limit to two arguments for now. I might
