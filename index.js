@@ -8,7 +8,8 @@ if (!Object.is) {
 
     /* Not testing for type Symbol as it wasn't available on
     older versions of Javascript */
-    var args_one = arguments[0], args_two = arguments[1];
+    var args_one = arguments[0],
+      args_two = arguments[1];
     if (typeof args_one !== typeof args_two) return false;
 
     /* Since both the types are equal, we can check for type 
@@ -44,8 +45,8 @@ if (!Object.is) {
         */
         if (args_one === 0) {
           if (args_two === 0) {
-            if (1 / args_one === Infinity) return (1 / args_two) === Infinity;
-            if (1 / args_one === -Infinity) return (1 / args_two) === -Infinity
+            if (1 / args_one === Infinity) return 1 / args_two === Infinity;
+            if (1 / args_one === -Infinity) return 1 / args_two === -Infinity;
           } else {
             return false;
           }
