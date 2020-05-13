@@ -32,6 +32,9 @@ if (!Object.is) {
         if (Number.isNaN(args_one)) {
           return Number.isNaN(args_two) ? true : false;
         }
+        if (Number.isNaN(args_two)) {
+          return Number.isNaN(args_one) ? true : false;
+        }
         /*
           Checking for negative 0 as,
           -0 === 0 // TRUE
